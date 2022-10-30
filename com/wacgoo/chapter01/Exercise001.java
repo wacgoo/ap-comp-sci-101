@@ -79,8 +79,8 @@ public class Exercise001 implements IExercise {
     Dog scoobydo;
 
     /*
-      todo: display what goofy ate after calling "feed" 
-            with "fish" to Goofy
+      todo: display what scoobydo ate after calling "feed" 
+            with "fish" to scoobydo
     */
     
   }
@@ -89,10 +89,11 @@ public class Exercise001 implements IExercise {
     System.out.println("\n==Exercise: Scooby-Do Where Are You?\n");    
     // todo: display Roofus' name again
 
-    // think: why can't you display goofy's name here too?
-    // todo: change the variable goofy so that you can create
-    //       it in the previous method "feedRoofus", but
-    //       still can get its name here, just like roofus
+    // think: why can't you access variable scoobydo from
+    //        the previous method here?
+    // todo: change the variable scoobydo so that you can create
+    //       it in the previous method "feedRoofus()", and
+    //       get its name here, just like roofus
   }
 
   
