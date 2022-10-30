@@ -7,11 +7,21 @@ class Dog {
     name = "Doggie";
   }
 
-  public String tellMeYourName() {
+  public String getName() {
     return name;
   }
 
-  public void giveName(String newName) {
+  public void setName(String newName) {
     name = newName;
+  }
+
+  public String biteOtherDog(Dog otherDog) {
+    String bittenSound = otherDog.bittenSound();
+    return name + " bit " + otherDog.getName() + "\n" +
+      bittenSound;
+  }
+
+  private String bittenSound() {
+    return name + " said: ouch!";
   }
 }
