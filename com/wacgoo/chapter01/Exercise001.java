@@ -8,7 +8,7 @@ public class Exercise001 implements IExercise {
 
   // this function is to help you display the name of a dog
   private static void printName(String name) {
-    System.out.println("My dog's name is " + name + "\n");
+    System.out.println("My dog's name is " + name);
   }
 
   private void welcomeDog() {
@@ -23,6 +23,13 @@ public class Exercise001 implements IExercise {
     // Dog class to see if there is a way to change the
     // name the dog.
     // Name the dog and display its new name
+
+    /* ******************
+    ** What you just learned
+    **   Calling constructor to instantiate a object, then
+    **   perform action to the object
+    ** ******************
+    */
   }
 
   private void iWantMyOwnDog() {
@@ -36,18 +43,70 @@ public class Exercise001 implements IExercise {
     // in this function
 
     // todo: display the dog's name by calling printName()
+
+    /* ******************
+    ** What you just learned
+    **   Create additional contructors that accept arguments
+    ** ******************
+    */
+
   }
 
-  private void multipleDogs() {
-    System.out.println("\n==Exercise: multiple dogs\n");
-    // todo: create 2 dogs and name them "Evangelyn" and "Jak"
+  private void ladyAndTheTramp() {
+    System.out.println("\n==Exercise: Lady and the Tramp\n");
+    // todo: create 2 dogs and name them "Lady" and "Jock"
+    Dog lady = null;
+    Dog jock = null;
 
-    // todo: ask dog "Evangelyn" to bit "Jak" by calling
+    // todo: ask dog "Lady" to bit "Jock" by calling
     // biteOtherDog.
     // biteOtherDog returns a sound (in String),
     // print out the sound
 
     // System.out.println(biteSound);
+
+    if (lady!=null) {
+      System.out.println(lady.getName() + " belongs to " +
+                        lady.KINGDOM + " kingdom and " +
+                        lady.FAMILY + " family");
+    }
+
+    if (jock!=null) {
+      // todo: print out which kingdom and family Jock
+      //       belongs to
+
+
+    }
+
+    if (lady!=null) {
+      System.out.println(lady.getName() + "'s favorite food is " +
+                        lady.favoriteFood);      
+    }
+    if (jock!=null) {
+      System.out.println(jock.getName() + "'s favorite food is " +
+                        jock.favoriteFood);      
+    }
+
+    // todo: change all dogs' favorite food to Ramen
+
+    if (lady!=null) {
+      System.out.println(lady.getName() + "'s favorite food is " +
+                        lady.favoriteFood);      
+    }
+    if (jock!=null) {
+      System.out.println(jock.getName() + "'s favorite food is " +
+                        jock.favoriteFood);
+    }
+
+    /* ******************
+    ** What you just learned
+    **   Class is a blueprint, you can create multiple instances
+    **   base on this blueprint.
+    **   Each instance has its own state (e.g. name of a dog)
+    **   However, all instances of the same Class share the STATIC
+    **   attributes.
+    ** ******************
+    */    
   }
 
   private void feedRoofus() {
@@ -76,6 +135,13 @@ public class Exercise001 implements IExercise {
      * with "fish" to scoobydo
      */
 
+    
+    /* ******************
+    ** What you just learned
+    **   Method overloading
+    **   Local variable instantiation
+    ** ******************
+    */
   }
 
   private void scoobydoWhereAreYou() {
@@ -100,6 +166,39 @@ public class Exercise001 implements IExercise {
       // it in the previous method "feedRoofus()", and
       // get its name here, just like roofus
     }
+    
+    /* ******************
+    ** What you just learned
+    **   Class attributes and local variable scopes.
+    **   Class attributes, like roofus, remains across method scopes.
+    **   Local variables stay within the same scope they were defined.
+    ** ******************
+    */
+  }
+
+  private void imposter() {
+    System.out.println("\n==Exercise: imposter\n");
+
+    if (roofus != null) {
+      printName(roofus.getName());
+    }
+
+    Dog roofus = new Dog();
+    roofus.setName("Goofy");
+    printName(roofus.getName());
+
+    System.out.println("No! That's not my dog.");
+    // Roofus still exists. But the roofus above is not the right dog.
+    
+    // todo: change the following line to get to real Roofus,
+    //       display its name without setting the name again.
+    printName(roofus.getName());
+
+    /* ******************
+    ** What you just learned
+    **   Variable name collision, how to resolve them
+    ** ******************
+    */
   }
 
   private void dogDoesTricks() {
@@ -130,6 +229,14 @@ public class Exercise001 implements IExercise {
       System.out.println("You received " + numOfSticks +
           " sticks from " + roofus.getName());
     }
+
+    /* ******************
+    ** What you just learned
+    **   Method parameters of primative types (e.g. int) 
+    **   are pass-by-value. They cannot be 
+    **   modified by the method.
+    ** ******************
+    */    
   }
 
   private void catLover() {
@@ -146,6 +253,12 @@ public class Exercise001 implements IExercise {
      * todo: create a Cat object with name Felix, then
      * display its name
      */
+
+    /* ******************
+    ** What you just learned
+    **   Create your own Class
+    ** ******************
+    */    
   }
 
   /* **************************************************
@@ -156,9 +269,10 @@ public class Exercise001 implements IExercise {
   public void run() {
     welcomeDog();
     iWantMyOwnDog();
-    multipleDogs();
+    ladyAndTheTramp();
     feedRoofus();
     scoobydoWhereAreYou();
+    imposter();
     dogDoesTricks();
     catLover();
   }

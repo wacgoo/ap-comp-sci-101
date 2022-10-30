@@ -1,6 +1,11 @@
 package com.wacgoo.chapter01;
 
 class Dog {
+  public final static String KINGDOM = "Animal";
+  public final static String FAMILY = "Canidae";
+
+  public static String favoriteFood = "bone";
+  
   private String name;
 
   public Dog() {
