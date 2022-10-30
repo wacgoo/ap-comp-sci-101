@@ -3,15 +3,20 @@ package com.wacgoo.chapter01;
 import com.wacgoo.IExercise;
 
 public class Exercise001 implements IExercise {
+
+  private Dog roofus;
   
   public void run() {
-    System.out.println("Exercise: Welcome Dog\n");
     welcomeDog();
     iWantMyOwnDog();
     multipleDogs();
+    feedRoofus();
+    scoobydoWhereAreYou();
+    catLover();
   }
 
   private void welcomeDog() {
+    System.out.println("\n==Exercise: Welcome Dog\n");
     // todo: construct an instance from Dog class
     // using its default constructor, assign it to
     // a local variable
@@ -29,6 +34,7 @@ public class Exercise001 implements IExercise {
   }
 
   private void iWantMyOwnDog() {
+    System.out.println("\n==Exercise: I want my own dog\n");
     // todo: Sometimes you know what to name a dog when you see
     // it for the first time. Go to the Dog class and add
     // a new Constructor that would let you name the dog
@@ -41,6 +47,7 @@ public class Exercise001 implements IExercise {
   }
 
   private void multipleDogs() {
+    System.out.println("\n==Exercise: multiple dogs\n");
     // todo: create 2 dogs and name them "Evangelyn" and "Jak"
 
     // todo: ask dog "Evangelyn" to bit "Jak" by calling
@@ -49,5 +56,61 @@ public class Exercise001 implements IExercise {
     //       print out the sound
     
     // System.out.println(biteSound);
+  }
+
+  private void feedRoofus() {
+    System.out.println("\n==Exercise: feed Roofus\n");
+    // todo: create a Dog with name "Roofus", and save it
+    //       to the class attribute roofus (already defined)
+    // todo: feed Roofus by calling feed() with appretizer
+    //       "pickle" and main dish "hot dog". Print the
+    //       returned string.
+
+    // todo: create another "feed" method in Dog class to
+    //       *overload* the feed() by taking only one parameter,
+    //       and returning "Roofus ate <name of the food>"
+
+    // todo: feed Roofus only pizza, and display the result
+
+    /*
+      todo: create another Dog name "Scooby-Do" and save it
+            in the following *local variable* scoobydo
+    */
+    Dog scoobydo;
+
+    /*
+      todo: display what scoobydo ate after calling "feed" 
+            with "fish" to scoobydo
+    */
+    
+  }
+
+  private void scoobydoWhereAreYou() {
+    System.out.println("\n==Exercise: Scooby-Do Where Are You?\n");    
+    // todo: display Roofus' name again
+
+    // think: why can't you access variable scoobydo from
+    //        the previous method here?
+    // todo: change the variable scoobydo so that you can create
+    //       it in the previous method "feedRoofus()", and
+    //       get its name here, just like roofus
+  }
+
+  
+
+  private void catLover() {
+    System.out.println("\n==Exercise: cat lover\n");    
+    /*
+      todo: create a new Class Cat with the following:
+            - has a String attribute "name"
+            - one constructor that takes single String. The
+              value will be used as the name of the Cat
+            - has a getName method that returns the name
+    */
+    
+    /*
+      todo: create a Cat object with name Felix, then
+            display its name
+    */
   }
 }
