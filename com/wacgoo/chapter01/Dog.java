@@ -1,3 +1,5 @@
+package com.wacgoo.chapter01;
+
 class Dog {
   private String name;
 

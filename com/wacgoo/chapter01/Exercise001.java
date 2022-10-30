@@ -1,3 +1,5 @@
+package com.wacgoo.chapter01;
+
 public class Exercise001 implements IExercise {
   public void run() {
     System.out.println("Exercise: Welcome Dog\n");
