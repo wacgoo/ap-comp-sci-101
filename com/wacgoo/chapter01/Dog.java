@@ -29,4 +29,12 @@ class Dog {
     return name + " ate " + appretizer + ", then ate " + 
       mainDish;
   }
+
+  public int fetchStick(int numOfSticks) {
+    // drop one stick
+    numOfSticks = numOfSticks - 1;
+    System.out.println(name + " fetched you " + numOfSticks +
+                      " sticks");
+    return numOfSticks;
+  }
 }

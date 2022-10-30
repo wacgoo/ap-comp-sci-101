@@ -12,6 +12,7 @@ public class Exercise001 implements IExercise {
     multipleDogs();
     feedRoofus();
     scoobydoWhereAreYou();
+    dogDoesTricks();
     catLover();
   }
 
@@ -89,13 +90,43 @@ public class Exercise001 implements IExercise {
     System.out.println("\n==Exercise: Scooby-Do Where Are You?\n");    
     // todo: display Roofus' name again
 
-    // think: why can't you access variable scoobydo from
-    //        the previous method here?
+    // answer:
+    //    why can't you access variable scoobydo from
+    //    the previous method here?
     // todo: change the variable scoobydo so that you can create
     //       it in the previous method "feedRoofus()", and
     //       get its name here, just like roofus
   }
 
+  private void dogDoesTricks() {
+    System.out.println("\n==Exercise: dog does tricks\n");
+
+    // todo: run and observe the output of this exercise
+    
+    int numOfSticks = 5;
+    if(iHaveRoofus()) {
+      System.out.println("You said, \"" + roofus.getName() +
+                         ", fetch me " +
+                         numOfSticks + " sticks\"");
+      roofus.fetchStick(numOfSticks);
+      /*
+        answer:
+          - why Roofus didn't fetch you 5 sticks?
+          - Inside the method fetchStick() of Dog, numOfSticks
+            was changed. But why it is still showing
+            5 sticks here after calling fetchStick()?
+      */
+
+      /*
+        todo: notice fetchStick() in Dog class returns the actual
+              number of sticks fetched. Make necessary
+              changes only in this method to show the actual
+              number of sticks fetched
+      */
+      System.out.println("You received " + numOfSticks + 
+                         " sticks from " + roofus.getName());
+    }
+  }
   
 
   private void catLover() {
@@ -112,5 +143,9 @@ public class Exercise001 implements IExercise {
       todo: create a Cat object with name Felix, then
             display its name
     */
+  }
+
+  private boolean iHaveRoofus() {
+    return roofus != null;
   }
 }
