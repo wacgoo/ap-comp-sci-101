@@ -1,4 +1,5 @@
-package com.wacgoo.chapter01;
+import com.wacgoo.IExercise;
+import com.wacgoo.chapter01.Exercise001;
 
 class Main {
   public static void main(String[] args) {

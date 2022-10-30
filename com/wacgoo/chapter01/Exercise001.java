@@ -1,10 +1,14 @@
 package com.wacgoo.chapter01;
 
+import com.wacgoo.IExercise;
+
 public class Exercise001 implements IExercise {
+  
   public void run() {
     System.out.println("Exercise: Welcome Dog\n");
     welcomeDog();
     iWantMyOwnDog();
+    multipleDogs();
   }
 
   private void welcomeDog() {
@@ -34,5 +38,16 @@ public class Exercise001 implements IExercise {
     // in this function
 
      // todo: display the dog's name by calling printName()
+  }
+
+  private void multipleDogs() {
+    // todo: create 2 dogs and name them "Evangelyn" and "Jak"
+
+    // todo: ask dog "Evangelyn" to bit "Jak" by calling
+    //       biteOtherDog. 
+    //       biteOtherDog returns a sound (in String),
+    //       print out the sound
+    
+    // System.out.println(biteSound);
   }
 }
