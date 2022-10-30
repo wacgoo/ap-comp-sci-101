@@ -24,4 +24,9 @@ class Dog {
   private String bittenSound() {
     return name + " said: ouch!";
   }
+
+  public String feed(String appretizer, String mainDish) {
+    return name + " ate " + appretizer + ", then ate " + 
+      mainDish;
+  }
 }
