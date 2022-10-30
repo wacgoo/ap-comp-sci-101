@@ -63,6 +63,7 @@ public class Exercise001 implements IExercise {
     System.out.println("\n==Exercise: feed Roofus\n");
     // todo: create a Dog with name "Roofus", and save it
     //       to the class attribute roofus (already defined)
+    
     // todo: feed Roofus by calling feed() with appretizer
     //       "pickle" and main dish "hot dog". Print the
     //       returned string.
@@ -88,14 +89,25 @@ public class Exercise001 implements IExercise {
 
   private void scoobydoWhereAreYou() {
     System.out.println("\n==Exercise: Scooby-Do Where Are You?\n");    
-    // todo: display Roofus' name again
+    if (roofus != null) {
+      printName(roofus.getName());
+    }
 
-    // answer:
-    //    why can't you access variable scoobydo from
-    //    the previous method here?
-    // todo: change the variable scoobydo so that you can create
-    //       it in the previous method "feedRoofus()", and
-    //       get its name here, just like roofus
+    Dog scoobydo = null;
+    if (scoobydo != null) {
+            printName(scoobydo.getName());
+    } else {
+      System.out.println("Scooby-Do, where are you?!");
+      /* answer:
+          you instantiated a variable "scoobydo" 
+          in the previous method. But why can't scoobydo 
+          here is still null?
+      */
+      
+      // todo: adjust the variable scoobydo so that you can create
+      //       it in the previous method "feedRoofus()", and
+      //       get its name here, just like roofus
+    }
   }
 
   private void dogDoesTricks() {
