@@ -41,13 +41,13 @@ public class Exercise001 implements IExercise {
   }
 
   private void multipleDogs() {
-    Dog e1 = new Dog();
-    e1.setName("Evangelyn");
+    // todo: create 2 dogs and name them "Evangelyn" and "Jak"
 
-    Dog j1 = new Dog();
-    j1.setName("Jak");
-
-    String bitSound = e1.biteOtherDog(j1);
-    System.out.println(bitSound);
+    // todo: ask dog "Evangelyn" to bit "Jak" by calling
+    //       biteOtherDog. 
+    //       biteOtherDog returns a sound (in String),
+    //       print out the sound
+    
+    // System.out.println(biteSound);
   }
 }
